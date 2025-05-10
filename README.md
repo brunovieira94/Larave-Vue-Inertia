@@ -54,7 +54,7 @@ DB_PASSWORD=your_password
 php artisan migrate:fresh --seed
 
 ### Start Development Servers
-```bash
+
 # Start Laravel server
 php artisan serve
 
