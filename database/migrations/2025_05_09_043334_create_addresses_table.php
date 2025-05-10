@@ -19,6 +19,10 @@ return new class extends Migration
             $table->string('post_code');
             $table->string('street');
             $table->timestamps();
+
+            $table->index(['country', 'city']);
+            $table->index('country');
+            $table->index('city');
         });
     }
 

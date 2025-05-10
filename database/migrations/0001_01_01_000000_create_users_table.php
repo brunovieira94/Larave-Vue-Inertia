@@ -17,6 +17,13 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('email')->unique();
             $table->timestamps();
+
+            $table->index(['first_name', 'last_name', 'email']);
+            $table->index(['first_name', 'last_name']);
+            $table->index('first_name');
+            $table->index('last_name');
+            $table->index('email');
+            $table->index('created_at');
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
