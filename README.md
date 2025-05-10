@@ -97,6 +97,13 @@ return [
 ];
 ```
 
+## 📝 TODO
+
+### Vue Components Improvements
+- Break down large components into smaller, reusable ones
+- Improve Folder Structure
+- Add proper TypeScript types for components
+
 ## 📄 License
 
 This project is licensed under the MIT License
